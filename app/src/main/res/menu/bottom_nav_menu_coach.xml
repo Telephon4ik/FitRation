@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_clients"
+        android:icon="@drawable/ic_clients"
+        android:title="@string/title_clients" />
+
+    <item
+        android:id="@+id/navigation_coach_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/title_profile" />
+</menu>

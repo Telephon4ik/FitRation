@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "384905430987",
+    "project_id": "fitration-fdcaa",
+    "storage_bucket": "fitration-fdcaa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384905430987:android:b2d4bc77b4d2d35a03d84e",
+        "android_client_info": {
+          "package_name": "com.fitration"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0bZ5DliTp_xf34-0IHYXdGi58pebrxv8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

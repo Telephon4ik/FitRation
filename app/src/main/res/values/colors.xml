@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand colors - FitRation -->
+    <color name="primary">#4CAF50</color>
+    <color name="primary_dark">#388E3C</color>
+    <color name="primary_light">#C8E6C9</color>
+    <color name="primary_variant">#2E7D32</color>
+
+    <color name="secondary">#2196F3</color>
+    <color name="secondary_dark">#1976D2</color>
+    <color name="secondary_light">#BBDEFB</color>
+    <color name="secondary_variant">#1565C0</color>
+
+    <!-- Status colors -->
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FFC107</color>
+    <color name="error">#F44336</color>
+    <color name="info">#2196F3</color>
+
+    <!-- Nutrition colors -->
+    <color name="protein">#F44336</color> <!-- Red for protein -->
+    <color name="carbs">#2196F3</color>   <!-- Blue for carbs -->
+    <color name="fat">#FFC107</color>     <!-- Yellow/Orange for fat -->
+    <color name="calories">#4CAF50</color> <!-- Green for calories -->
+
+    <!-- Neutral colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="gray_50">#FAFAFA</color>
+    <color name="gray_100">#F5F5F5</color>
+    <color name="gray_200">#EEEEEE</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="gray_400">#BDBDBD</color>
+    <color name="gray">#9E9E9E</color>
+    <color name="gray_600">#757575</color>
+    <color name="gray_700">#616161</color>
+    <color name="gray_800">#424242</color>
+    <color name="gray_900">#212121</color>
+
+    <!-- Aliases for commonly used grays -->
+    <color name="gray_light">@color/gray_200</color>
+    <color name="gray_medium">@color/gray_400</color>
+    <color name="gray_dark">@color/gray_700</color>
+
+    <!-- Text colors -->
+    <color name="text_primary">@color/gray_900</color>
+    <color name="text_secondary">@color/gray_600</color>
+    <color name="text_disabled">@color/gray_400</color>
+    <color name="text_hint">@color/gray_400</color>
+
+    <!-- Background colors -->
+    <color name="background">#FFFFFF</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">@color/gray_100</color>
+    <color name="background_dark">@color/gray_900</color>
+
+    <!-- Icon colors -->
+    <color name="icon_active">@color/gray_900</color>
+    <color name="icon_inactive">@color/gray_400</color>
+    <color name="icon_disabled">@color/gray_300</color>
+
+    <!-- Border/Divider colors -->
+    <color name="divider">@color/gray_200</color>
+    <color name="outline">@color/gray_300</color>
+    <color name="outline_variant">@color/gray_100</color>
+
+    <!-- State colors -->
+    <color name="pressed">#1A000000</color> <!-- 10% black -->
+    <color name="focused">#14000000</color> <!-- 8% black -->
+    <color name="hovered">#0F000000</color> <!-- 6% black -->
+    <color name="selected">#0A000000</color> <!-- 4% black -->
+    <color name="activated">#1A4CAF50</color> <!-- 10% primary -->
+
+    <!-- Chart colors -->
+    <color name="chart_line_1">#4CAF50</color> <!-- Green -->
+    <color name="chart_line_2">#2196F3</color> <!-- Blue -->
+    <color name="chart_line_3">#FF9800</color> <!-- Orange -->
+    <color name="chart_line_4">#9C27B0</color> <!-- Purple -->
+    <color name="chart_line_5">#F44336</color> <!-- Red -->
+
+    <color name="chart_fill_1">#1A4CAF50</color> <!-- 10% Green -->
+    <color name="chart_fill_2">#1A2196F3</color> <!-- 10% Blue -->
+    <color name="chart_fill_3">#1AFF9800</color> <!-- 10% Orange -->
+    <color name="chart_fill_4">#1A9C27B0</color> <!-- 10% Purple -->
+    <color name="chart_fill_5">#1AF44336</color> <!-- 10% Red -->
+
+    <!-- Progress bar colors -->
+    <color name="progress_background">@color/gray_200</color>
+    <color name="progress_primary">@color/primary</color>
+    <color name="progress_secondary">@color/secondary</color>
+    <color name="progress_success">@color/success</color>
+    <color name="progress_warning">@color/warning</color>
+    <color name="progress_error">@color/error</color>
+
+    <!-- Button colors -->
+    <color name="button_text">@color/white</color>
+    <color name="button_background">@color/primary</color>
+    <color name="button_outline">@color/primary</color>
+    <color name="button_disabled">@color/gray_300</color>
+    <color name="button_disabled_text">@color/gray_600</color>
+
+    <!-- Card colors -->
+    <color name="card_background">@color/white</color>
+    <color name="card_elevated">@color/gray_50</color>
+
+    <!-- Input field colors -->
+    <color name="input_background">@color/white</color>
+    <color name="input_border">@color/gray_300</color>
+    <color name="input_focused">@color/primary</color>
+    <color name="input_error">@color/error</color>
+    <color name="input_success">@color/success</color>
+
+    <!-- Tab colors -->
+    <color name="tab_selected">@color/primary</color>
+    <color name="tab_unselected">@color/gray_600</color>
+    <color name="tab_indicator">@color/primary</color>
+    <color name="tab_background">@color/white</color>
+
+    <!-- Chip colors -->
+    <color name="chip_background">@color/gray_100</color>
+    <color name="chip_selected">@color/primary_light</color>
+    <color name="chip_text">@color/gray_900</color>
+    <color name="chip_outline">@color/gray_300</color>
+
+    <!-- Badge colors -->
+    <color name="badge_background">@color/error</color>
+    <color name="badge_text">@color/white</color>
+
+    <!-- Snackbar colors -->
+    <color name="snackbar_background">@color/gray_800</color>
+    <color name="snackbar_text">@color/white</color>
+    <color name="snackbar_action">@color/primary_light</color>
+
+    <!-- Calendar/Date picker colors -->
+    <color name="calendar_selected">@color/primary</color>
+    <color name="calendar_today">@color/secondary_light</color>
+    <color name="calendar_weekend">@color/error</color>
+
+    <!-- Coach specific colors -->
+    <color name="coach_accent">#9C27B0</color> <!-- Purple for coach role -->
+    <color name="client_accent">#00BCD4</color> <!-- Cyan for clients -->
+
+    <!-- Meal type colors -->
+    <color name="meal_breakfast">#FFB300</color> <!-- Amber -->
+    <color name="meal_lunch">#4CAF50</color>    <!-- Green -->
+    <color name="meal_dinner">#2196F3</color>   <!-- Blue -->
+    <color name="meal_snack">#9C27B0</color>    <!-- Purple -->
+
+    <!-- Status indicator colors -->
+    <color name="status_completed">#4CAF50</color>
+    <color name="status_in_progress">#2196F3</color>
+    <color name="status_pending">#FF9800</color>
+    <color name="status_overdue">#F44336</color>
+
+    <!-- Rating colors -->
+    <color name="rating_filled">#FFB300</color>
+    <color name="rating_empty">@color/gray_300</color>
+
+    <!-- Shadow/elevation colors -->
+    <color name="shadow_low">#0A000000</color>
+    <color name="shadow_medium">#14000000</color>
+    <color name="shadow_high">#1F000000</color>
+
+    <!-- Transparent colors -->
+    <color name="transparent">#00000000</color>
+    <color name="semi_transparent_black">#80000000</color>
+    <color name="semi_transparent_white">#80FFFFFF</color>
+
+    <!-- Gradient colors -->
+    <color name="gradient_start">#4CAF50</color>
+    <color name="gradient_middle">#2196F3</color>
+    <color name="gradient_end">#9C27B0</color>
+
+    <!-- Material Design compatibility - Standard attributes -->
+    <color name="colorPrimary">@color/primary</color>
+    <color name="colorPrimaryDark">@color/primary_dark</color>
+    <color name="colorPrimaryVariant">@color/primary_variant</color>
+    <color name="colorOnPrimary">@color/white</color>
+
+    <color name="colorSecondary">@color/secondary</color>
+    <color name="colorSecondaryVariant">@color/secondary_variant</color>
+    <color name="colorOnSecondary">@color/white</color>
+
+    <color name="colorBackground">@color/background</color>
+    <color name="colorSurface">@color/surface</color>
+    <color name="colorOnSurface">@color/text_primary</color>
+
+    <color name="colorError">@color/error</color>
+    <color name="colorOnError">@color/white</color>
+
+    <!-- For backward compatibility -->
+    <color name="secondary_text">@color/text_secondary</color>
+    <color name="hint_text">@color/text_hint</color>
+    <color name="textColorSecondary">@color/text_secondary</color>
+</resources>

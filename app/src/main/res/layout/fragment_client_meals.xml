@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- Шапка с информацией о клиенте и навигацией по датам -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="4dp"
+        android:layout_marginBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_client_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Питание клиента"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Навигация по датам -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <Button
+                    android:id="@+id/btn_prev_day"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="←"
+                    android:textSize="16sp"
+                    style="@style/Widget.FitRation.Button.Outlined"/>
+
+                <TextView
+                    android:id="@+id/tv_selected_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Сегодня"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:padding="8dp"/>
+
+                <Button
+                    android:id="@+id/btn_next_day"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="→"
+                    android:textSize="16sp"
+                    style="@style/Widget.FitRation.Button.Outlined"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_today"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Сегодня"
+                style="@style/Widget.FitRation.Button.Outlined"/>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Прогресс загрузки -->
+    <ProgressBar
+        android:id="@+id/loading_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        style="@style/Widget.FitRation.ProgressBar.Circular"
+        android:visibility="gone"/>
+
+    <!-- Пустой список -->
+    <TextView
+        android:id="@+id/tv_empty_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Питание не запланировано"
+        android:textSize="16sp"
+        android:textColor="@color/text_secondary"
+        android:padding="32dp"
+        android:visibility="gone"/>
+
+    <!-- Список блюд -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_client_meals"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false"/>
+
+</LinearLayout>

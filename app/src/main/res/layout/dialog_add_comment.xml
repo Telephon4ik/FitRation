@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Введите комментарий для клиента:"
+        android:layout_marginBottom="12dp"/>
+
+    <android.widget.EditText
+        android:id="@+id/et_comment"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:hint="Например: Отличный выбор! Рекомендую добавить больше овощей."
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"/>
+
+</LinearLayout>

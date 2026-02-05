@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@android:color/white"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/tv_client_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Имя пользователя"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_client_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="email@example.com"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_client_goal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Цель: Поддержание"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_client_calories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Норма: 2000 ккал/день"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_client_since"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="С: 01.01.2024"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"/>
+
+        <!-- Добавьте кнопку для отладки -->
+        <Button
+            android:id="@+id/btn_view_stats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Статистика"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
