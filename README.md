@@ -102,28 +102,19 @@ private static final String API_KEY = "ваш_ключ_здесь";
 
 | Экран входа | Регистрация пользователя | Регистрация тренера |
 |-------------|-------------------------|-------------------|
-| <img width="276" height="491" alt="image" src="https://github.com/user-attachments/assets/8180b76b-90c6-4c07-9ede-fc6b424a6f20" />
- | <img width="1080" height="3752" alt="image" src="https://github.com/user-attachments/assets/20c96d8e-ca94-4480-9281-28497404c27d" />
-| <img width="1080" height="2040" alt="image" src="https://github.com/user-attachments/assets/1a58b23d-b8f3-4f66-83d3-df29ac1460ea" />
-|
+|<img width="200" height="358" alt="image" src="https://github.com/user-attachments/assets/7d5b521a-4f41-461d-a85b-8c31e49c14bd" /> | <img width="200" height="694" alt="image" src="https://github.com/user-attachments/assets/20c96d8e-ca94-4480-9281-28497404c27d" />| <img width="200" height="444" alt="image" src="https://github.com/user-attachments/assets/1a58b23d-b8f3-4f66-83d3-df29ac1460ea" />|
 
 ### Для пользователей
 
 | План питания | Профиль пользователя | Отправка заявки |
 |-------------|--------------------|----------------|
-| <img width="1080" height="2264" alt="image" src="https://github.com/user-attachments/assets/bb2c4aad-d7d1-4eaa-b1ee-8374faf9ea39" />
- | <img width="1080" height="2212" alt="image" src="https://github.com/user-attachments/assets/ebdde4e9-6377-4d6f-8937-f8eafd74d798" />
- | <img width="1080" height="2219" alt="image" src="https://github.com/user-attachments/assets/dae2887b-daef-4a3f-a2f8-f50089bdd953" />
- |
+| <img width="200" height="419" alt="image" src="https://github.com/user-attachments/assets/bb2c4aad-d7d1-4eaa-b1ee-8374faf9ea39" /> | <img width="200" height="409" alt="image" src="https://github.com/user-attachments/assets/ebdde4e9-6377-4d6f-8937-f8eafd74d798" /> | <img width="200" height="410" alt="image" src="https://github.com/user-attachments/assets/dae2887b-daef-4a3f-a2f8-f50089bdd953" /> |
 
 ### Для тренеров
 
 | Список клиентов | Питание клиента | Профиль тренера |
 |----------------|----------------|----------------|
-| <img width="1080" height="2287" alt="image" src="https://github.com/user-attachments/assets/a99ee97a-0f53-4269-901e-b2877cc06290" />
- | <img width="1080" height="2273" alt="image" src="https://github.com/user-attachments/assets/45747e66-a50b-4ebf-9728-b723070b9b07" />
-| <img width="1080" height="2272" alt="image" src="https://github.com/user-attachments/assets/13488e33-d67f-4a8e-8888-922cdb7fe6ef" />
- |
+| <img width="200" height="423" alt="image" src="https://github.com/user-attachments/assets/a99ee97a-0f53-4269-901e-b2877cc06290" /> | <img width="200" height="420" alt="image" src="https://github.com/user-attachments/assets/45747e66-a50b-4ebf-9728-b723070b9b07" />| <img width="200" height="420" alt="image" src="https://github.com/user-attachments/assets/13488e33-d67f-4a8e-8888-922cdb7fe6ef" /> |
 
 ---
 
@@ -155,6 +146,7 @@ private static final String API_KEY = "ваш_ключ_здесь";
 
 ### Коллекции Firestore
 
+```text
 **users/** — Пользователи системы  
 ├── uid: string        # UID пользователя
 ├── email: string      # Email
@@ -163,20 +155,24 @@ private static final String API_KEY = "ваш_ключ_здесь";
 ├── publicId: string   # Публичный ID (FR-XXXXXX)
 ├── coachId: string    # ID привязанного тренера
 └── profileData: map   # Данные профиля
+```
 
+```text
 **meals/**                 # Блюда
 ├── userId: string     # ID пользователя
 ├── date: timestamp    # Дата приема пищи
 ├── mealType: string   # Тип (breakfast/lunch/dinner/snack)
 ├── nutrition: map     # Пищевая ценность
 └── coachComment: string # Комментарий тренера
+```
 
+```text
 **coach_requests/**       # Заявки тренерам
 ├── coachId: string    # ID тренера
 ├── userId: string     # ID пользователя
 ├── status: string     # Статус (PENDING/ACCEPTED/REJECTED)
 └── message: string    # Сообщение
-
+```
 ---
 
 # Используемые технологии
